@@ -1,0 +1,14 @@
+.pagination{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  .button_lists{
+    display: flex;
+    gap: 2rem;
+    font-weight: bold;
+    button{
+      color: var(--link-color);
+    }
+  }
+}

@@ -4,18 +4,29 @@ export async function POST(req: Request) {
   
   const body = await req.json()
 
-  const { latitude, longitude, range = 3, keyword = '', start = 1 } = body
+  const {
+    latitude,
+    longitude,
+    range = 3,
+    keyword = '',
+    count = 100,
+    id,
+  } = body
 
   const params = new URLSearchParams({
     key: HOTPEPPER_API_KEY || '',
-    lat: String(latitude),
-    lng: String(longitude),
-    range: String(range),
-    keyword: String(keyword),
-    start: String(start),
-    count: '10',
     format: 'json'
   })
+
+  if (id) {
+    params.set('id', id)
+  } else {
+    params.set('lat', String(latitude))
+    params.set('lng', String(longitude))
+    params.set('range', String(range))
+    params.set('keyword', keyword)
+    params.set('count', String(count))
+  }
 
   try {
     const response = await fetch(`${HOTPEPPER_BASE_URL}?${params.toString()}`)
