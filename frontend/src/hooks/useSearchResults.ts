@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useShopContext } from "@/context/shopContext";
-import { Shop } from "@/types/shop";
 
 export const useSearchResults = () => {
   const searchParams = useSearchParams();
