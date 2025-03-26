@@ -9,11 +9,7 @@ type PaginationProps = {
   onPageChange: (page: number) => void;
 };
 
-const Pagination: FC<PaginationProps> = ({
-  currentPage,
-  totalPages,
-  onPageChange,
-}) => {
+const Pagination: FC<PaginationProps> = ({ currentPage, totalPages, onPageChange }) => {
   const [inputPage, setInputPage] = useState(currentPage);
 
   const handleSubmit = (e: FormEvent) => {
@@ -26,9 +22,7 @@ const Pagination: FC<PaginationProps> = ({
   return (
     <div className={styles.pagination}>
       <div className={styles.button_lists}>
-        {currentPage > 1 && (
-          <button onClick={() => onPageChange(currentPage - 1)}>◀ 前へ</button>
-        )}
+        {currentPage > 1 && <button onClick={() => onPageChange(currentPage - 1)}>◀ 前へ</button>}
 
         <span>
           ページ {currentPage} / {totalPages}

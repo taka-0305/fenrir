@@ -1,57 +1,58 @@
-.wrapper{
+.wrapper {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   align-items: flex-start;
-  overflow: visible
+  overflow: visible;
 }
-.prev_button{
+.prev_button {
   color: var(--link-color);
   font-weight: bold;
 }
-.thumbnail{
+.thumbnail {
   width: 400px;
   height: 400px;
   align-self: flex-start;
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 }
 
-.info{
+.info {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  .tags{
+  .tags {
     display: flex;
     gap: 1rem;
   }
-  .link{
+  .link {
     background-color: var(--link-color);
     color: white;
     padding: 0.75em 1.5em;
     width: fit-content;
     border-radius: 0.25em;
   }
-  .info_detail{
-    .table{
-      tbody{
-        tr{
+  .info_detail {
+    .table {
+      tbody {
+        tr {
           border-bottom: solid 1px gray;
-          th{
+          th {
             white-space: nowrap;
           }
-          th,td{
+          th,
+          td {
             padding: 2rem 1rem;
           }
         }
       }
     }
-    p{
-      svg{
+    p {
+      svg {
         width: 1.2em;
         height: 1.2em;
         margin-right: 0.5em;

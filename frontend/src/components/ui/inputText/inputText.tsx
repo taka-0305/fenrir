@@ -7,11 +7,7 @@ type InputTextProps = {
   placeholder?: string;
 };
 
-const InputText: FC<InputTextProps> = ({
-  value,
-  onChange,
-  placeholder = "",
-}) => {
+const InputText: FC<InputTextProps> = ({ value, onChange, placeholder = "" }) => {
   return (
     <input
       type="text"

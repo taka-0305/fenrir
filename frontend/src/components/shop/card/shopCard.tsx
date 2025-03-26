@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./shopCard.module.scss";
 import ShopTags from "../tags/shopTags";
 import { Shop } from "@/types/shop";
@@ -12,7 +13,9 @@ const ShopCard = ({ shop }: Props) => {
   return (
     <li className={styles.card}>
       <div className={styles.thumbnail}>
-        {shop.photo?.pc?.l && <img src={shop.photo.pc.l} alt={shop.name} />}
+        {shop.photo?.pc?.l && (
+          <Image src={shop.photo.pc.l} alt={shop.name} width={300} height={300} />
+        )}
       </div>
       <div className={styles.info}>
         <ShopTags shop={shop} />

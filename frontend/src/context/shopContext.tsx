@@ -14,11 +14,7 @@ const ShopContext = createContext<{
 export const ShopProvider = ({ children }: { children: ReactNode }) => {
   const [allShops, setAllShops] = useState<Shop[]>([]);
 
-  return (
-    <ShopContext.Provider value={{ allShops, setAllShops }}>
-      {children}
-    </ShopContext.Provider>
-  );
+  return <ShopContext.Provider value={{ allShops, setAllShops }}>{children}</ShopContext.Provider>;
 };
 
 export const useShopContext = () => useContext(ShopContext);

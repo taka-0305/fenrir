@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
     };
     return config;
   },
+  images: {
+    domains: ["imgfp.hotp.jp"],
+  },
 };
 
 export default nextConfig;

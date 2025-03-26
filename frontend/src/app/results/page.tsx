@@ -8,14 +8,8 @@ import PageLayout from "@/layouts/page/pageLayout";
 import LoadingOverlay from "@/components/common/loading/loadingOverlay";
 
 export default function ResultsPage() {
-  const {
-    loading,
-    error,
-    currentPage,
-    setCurrentPage,
-    totalPages,
-    currentShops,
-  } = useSearchResults();
+  const { loading, error, currentPage, setCurrentPage, totalPages, currentShops } =
+    useSearchResults();
 
   return (
     <>

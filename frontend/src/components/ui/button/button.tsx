@@ -10,9 +10,7 @@ type ButtonProps = {
 const Button: FC<ButtonProps> = ({ children, onClick, variant = "main" }) => {
   return (
     <button
-      className={`${styles.button} ${
-        variant === "header" ? styles.header : styles.main
-      }`}
+      className={`${styles.button} ${variant === "header" ? styles.header : styles.main}`}
       type="submit"
       onClick={onClick}
     >

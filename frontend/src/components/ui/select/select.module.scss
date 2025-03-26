@@ -3,8 +3,9 @@
   position: relative;
   border-radius: 1rem;
   background: #e8e8e8;
-  box-shadow: 20px 20px 60px #c5c5c5,
-              -20px -20px 60px #ffffff;
+  box-shadow:
+    20px 20px 60px #c5c5c5,
+    -20px -20px 60px #ffffff;
   transition: 0.3s;
 
   select {
@@ -29,7 +30,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     right: 1.5rem;
@@ -43,7 +44,8 @@
   }
 
   &:focus-within {
-    box-shadow: inset 20px 20px 60px #c5c5c5,
-                inset -20px -20px 60px #ffffff;
+    box-shadow:
+      inset 20px 20px 60px #c5c5c5,
+      inset -20px -20px 60px #ffffff;
   }
 }
