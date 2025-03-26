@@ -1,3 +1,5 @@
+"use client";
+
 import { FC } from "react";
 import Tag from "@/components/ui/tag/tag";
 import { Shop } from "@/types/shop";

@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactNode } from "react";
 import HeaderWithSearch from "@/layouts/header/header";
 import styles from "./pageLayout.module.scss";

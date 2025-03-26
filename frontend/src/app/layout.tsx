@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Footer from "@/layouts/footer/footer";
 import { ShopProvider } from "@/context/shopContext";
+import ClientWrapper from "@/components/common/clientWrapper";
 import "../styles/destyle.css";
 import "./globals.css";
 
@@ -28,7 +29,10 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <ShopProvider>{children}</ShopProvider>
+        <ClientWrapper>
+          <ShopProvider>{children}</ShopProvider>
+        </ClientWrapper>
+
         <Footer />
       </body>
     </html>

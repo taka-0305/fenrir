@@ -3,7 +3,7 @@ import styles from "./footer.module.scss";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <p>Hotpepper inc.</p>
+      <p>RestaurantSearcher inc.</p>
     </footer>
   );
 }
