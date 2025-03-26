@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "./ErrorMessage.module.scss";
+import styles from "./errorMessage.module.scss";
 
 type Props = {
   message: string;

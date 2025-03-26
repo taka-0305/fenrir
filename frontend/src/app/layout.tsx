@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Hotpepper Finder｜現在地からお店検索",
+export const metadata: Metadata = {
+  title: "RestaurantSearcher｜現在地からお店検索",
   description: "現在地とキーワードで周辺のお店を検索できます",
 };
 

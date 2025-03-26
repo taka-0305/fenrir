@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Tag from "@/components/ui/tag/tag";
 import { Shop } from "@/types/shop";
-import styles from "./ShopTags.module.scss";
+import styles from "./shopTags.module.scss";
 
 type Props = {
   shop: Shop;
