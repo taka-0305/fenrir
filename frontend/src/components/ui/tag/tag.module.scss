@@ -1,0 +1,16 @@
+.tag{
+  color: white;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
+  width: fit-content;
+  font-weight: bold;
+  &.red{
+    border:solid 2px red;
+    color: red;
+  }
+  &.blue{
+    border:solid 2px blue;
+    color: blue;
+  }
+}

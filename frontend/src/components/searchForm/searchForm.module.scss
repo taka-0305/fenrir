@@ -1,0 +1,21 @@
+
+.form{
+  width: 600px;
+  &.header{
+    .form_wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+    }
+  }
+  &.main{
+    .form_wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 2em;
+    }
+  }
+}
